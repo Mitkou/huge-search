@@ -22,7 +22,12 @@ body {
 }
 
 .search-input {
+<<<<<<< HEAD
   width: calc(100% - 120px);
+=======
+  width: calc(100% - 121px);
+  padding: 0;
+>>>>>>> Fixed widths of multiple elements
   vertical-align: middle;
   border: 0;
   background: transparent;
@@ -39,7 +44,7 @@ body {
   padding: 0;
   vertical-align: middle;
   border: 0;
-  background: none;
+  background: transparent;
 }
 
 .search-categories {
@@ -51,7 +56,12 @@ body {
 [class|="container"] {
   display: inline-block;
   width: 30%;
+<<<<<<< HEAD
+=======
+  padding: 0;
+>>>>>>> Fixed widths of multiple elements
   height: 100%;
+  font-size: 0;
 }
 
 [class|="category-name"] {
