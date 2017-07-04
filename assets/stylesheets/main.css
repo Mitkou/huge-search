@@ -2,7 +2,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  color: #c2c2c2;
 }
 
 html {
@@ -22,7 +21,7 @@ body {
 }
 
 .search-input {
-  width: 85%;
+  width: 80%;
   vertical-align: middle;
   border: 0;
   background: transparent;
@@ -34,10 +33,33 @@ body {
   }
 
 .search-button {
-  width: 8%;
+  width: 10%;
+  margin-left: 5%;
+  padding: 0;
   vertical-align: middle;
   border: 0;
   background: none;
+}
+
+.search-categories {
+  max-width: 80%;
+  height: 472.15px;
+  margin: 0 auto;
+}
+
+[class|="container"] {
+  display: inline-block;
+  width: 28%;
+  height: 100%;
+}
+
+[class|="category-name"] {
+  display: inline-block;
+  margin-bottom: 5%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c2c2c2;
 }
 
 ul {
@@ -47,35 +69,18 @@ ul {
   font-size: 0;
 }
 
-.category-name, .category-item, .category-item * {
+.category-item, .category-item * {
   display: inline-block;
 }
 
 [class|="categories"] {
-  width: 28%;
+  height: 88%;
   padding: 0;
 }
 
-.search-categories {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.categories-popular, .categories-recent {
+.container-popular, .container-recent {
   margin-left: 5%;
 }
-
-[class|="category-name"] {
-  display: inline-block;
-  width: 28%;
-  margin-bottom: 1%;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-  .category-name-popular, .category-name-recent {
-    margin-left: 5%;
-  }
 
 .categories-people .category-item {
   border: 0;
@@ -83,17 +88,20 @@ ul {
 }
   .category-item {
     width: 100%;
+    height: 16.67%;
     position: relative;
     margin-top: 1.5%;
     background: rgba(118,117,128,0.05);
   }
   .item-link {
     width: 100%;
-    height: 100%;
+
     padding: 2%;
+    color: #c2c2c2;
   }
     .item-link:hover {
         background: rgba(118,117,128,0.1);
+        color: #ec5a62;
     }
     .item-txt {
       width: calc(100% - 50px);
@@ -103,9 +111,6 @@ ul {
       font-size: 0.9rem;
       font-weight: bold;
     }
-      .category-item .item-txt:hover {
-        color: #ec5a62;
-      }
 
 .categories-people .item-img {
   width: 50px;
