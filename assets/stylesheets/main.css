@@ -58,7 +58,6 @@ ul {
 
 .search-categories {
   width: 80%;
-  height: 548.1px;
   margin: 0 auto;
 }
 
@@ -90,9 +89,10 @@ ul {
         background: rgba(118,117,128,0.1);
     }
     .item-txt {
-      margin-left: 10%;
+      width: calc(100% - 50px);
+      padding-left: 10px;
       vertical-align: middle;
-      text-decoration: none;
+      /*text-decoration: none;*/
       font-size: 0.9rem;
       font-weight: bold;
     }
@@ -101,17 +101,20 @@ ul {
       }
 
 .categories-people .item-img {
+  width: 50px;
   vertical-align: middle;
   border: 0;
   border-radius: 100%;
 }
 
 .categories-popular .item-img {
+  width: 50px;
   vertical-align: middle;
   border: 0;
 }
 
 .categories-recent .item-img {
+  width: 50px;
   vertical-align: middle;
   border: 0;
 }
